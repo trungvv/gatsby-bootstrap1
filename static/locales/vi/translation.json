@@ -1,0 +1,22 @@
+{
+  "menu-item-home": "Home",
+  "menu-item-product": "Sản phẩm",
+  "menu-subitem-film": "Phim",
+  "menu-subitem-news": "Chương trình tin tức",
+  "menu-subitem-gameshows": "Gameshows",
+  "menu-subitem-public": "Chương trình xã hội",
+  "menu-subitem-product-others": "Sản phẩm khác",
+  "menu-item-service": "Dịch vụ",
+  "menu-subitem-media": "Media",
+  "menu-subitem-pr": "Public Relations",
+  "menu-subitem-event": "Tổ chức Event",
+  "menu-subitem-digitalMarketing": "Digital Marketing",
+  "menu-subitem-ooh": "OOH",
+  "menu-item-customer": "Khách hàng",
+  "menu-item-pricing": "Bảng giá",
+  "menu-subitem-eNews": "Báo điện tử",
+  "menu-subitem-newspaper": "Báo giấy",
+  "menu-subitem-television": "Truyền hình",
+
+  "btn-detail": "Chi tiết"
+}

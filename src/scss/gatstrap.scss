@@ -10,7 +10,7 @@
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-  primary: $purple,
+  primary: $black,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -81,10 +81,10 @@ p {
 }
 
 img {
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
   max-width: 100%;
 }
 
-img:hover {
-  animation: pulse 0.5s;
-}
+// img:hover {
+//   animation: pulse 0.5s;
+// }

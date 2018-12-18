@@ -1,0 +1,20 @@
+{
+  "menu-item-home": "Home",
+  "menu-item-product": "Products",
+  "menu-subitem-film": "Film",
+  "menu-subitem-news": "News Program",
+  "menu-subitem-gameshows": "Gameshows",
+  "menu-subitem-public": "Public Program",
+  "menu-subitem-product-others": "Others",
+  "menu-item-service": "Services",
+  "menu-subitem-media": "Media",
+  "menu-subitem-pr": "Public Relations",
+  "menu-subitem-event": "Events",
+  "menu-subitem-digitalMarketing": "Digital Marketing",
+  "menu-subitem-ooh": "OOH",
+  "menu-item-customer": "Customers",
+  "menu-item-pricing": "Pricing",
+  "menu-subitem-eNews": "e-News",
+  "menu-subitem-newspaper": "Newspaper",
+  "menu-subitem-television": "Television"
+}

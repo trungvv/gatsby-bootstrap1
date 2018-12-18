@@ -5,12 +5,18 @@ import get from 'lodash/get'
 import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
+import Banner from 'components/Banner'
+import ProductCarousel from 'components/ProductCarousel'
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
   return (
     <Layout location={location}>
       <Meta site={get(data, 'site.meta')} />
+
+      <Banner />
+      <ProductCarousel />
+
       {posts.map(({ post }, i) => (
         <Post
           data={post}
