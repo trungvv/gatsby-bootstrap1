@@ -7,6 +7,7 @@ import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Banner from 'components/Banner'
 import SectionProduct from 'components/SectionProduct'
+import SectionService from 'components/SectionService'
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
@@ -16,6 +17,7 @@ const BlogIndex = ({ data, location }) => {
 
       <Banner />
       <SectionProduct />
+      <SectionService />
 
       {posts.map(({ post }, i) => (
         <Post

@@ -13,21 +13,21 @@ const items = [
   {
     id: 1,
     src:
-      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_conference_3-1.jpg',
+      'https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/42660512_749028275480279_8399454433099907072_o.jpg?_nc_cat=110&_nc_ht=scontent.fdad3-1.fna&oh=58270b6d574314d704b4a0de7b755379&oe=5CA5B99A',
     altText: 'Slide 1',
     caption: 'Slide 1',
   },
   {
     id: 2,
     src:
-      'https://cdn.pixabay.com/photo/2013/11/28/10/02/photo-camera-219958_1280.jpg',
+      'https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/41006969_737700396613067_5465604080413966336_o.jpg?_nc_cat=107&_nc_ht=scontent.fdad3-2.fna&oh=1abbf4c03a71ae0a7c31b2a690ba112e&oe=5CA6F3AF',
     altText: 'Slide 2',
     caption: 'Slide 2',
   },
   {
     id: 3,
     src:
-      'https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068_1280.jpg',
+      'https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-9/40141616_732633677119739_3246191322322698240_n.jpg?_nc_cat=106&_nc_ht=scontent.fdad3-1.fna&oh=e2267832c00d98f9b716853f1c40d7b2&oe=5CD7EC29',
     altText: 'Slide 3',
     caption: 'Slide 3',
   },

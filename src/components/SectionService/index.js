@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import { withNamespaces } from 'react-i18next'
 import { Link } from 'gatsby'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 import './style.scss'
 
 const items = [
@@ -53,7 +51,7 @@ const items = [
   },
 ]
 
-class SectionProduct extends Component {
+class SectionService extends Component {
   render() {
     const settings = {
       dots: false,
@@ -91,41 +89,43 @@ class SectionProduct extends Component {
     const { t } = this.props
     const slides = items.map(item => {
       return (
-        <div className="card" key={item.id}>
-          <img className="card-img-top" src={item.src} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">{item.title}</h5>
-            <p className="card-subtitle">
-              <small className="text-muted">{item.category}</small>
-            </p>
-            <div className="overflow-hidden">
-              <p className="card-text text-justify">{item.desc}</p>
+        <div className="col-sm-6 col-md-4 ">
+          <div className="media border media-style" key={item.id}>
+            <div className="mr-3 btn rounded-circle bg-secondary num">
+              {item.id}
             </div>
+            <div className="media-body">
+              <h3 className="media-title">{item.title}</h3>
 
-            <Link to="#" className="btn btn-outline-secondary">
+              <div className="overflow-hidden text-justify">
+                <p className="media-text ">{item.desc}</p>
+              </div>
+
+              {/* <Link to="#" className="btn btn-outline-secondary">
               {t('btn-detail')}
-            </Link>
+            </Link> */}
+            </div>
           </div>
         </div>
       )
     })
 
     return (
-      <div className="jumbotron bg-light mb-0">
-        <h1 className="display-4 text-center">{t('product-title')}</h1>
+      <div className="jumbotron container-fluid rounded-0">
+        <h1 className="display-4 text-center">{t('service-title')}</h1>
 
-        <p className="lead text-center">{t('product-subtitle')}</p>
+        <p className="lead text-center">{t('service-subtitle')}</p>
 
         <hr className="line bg-secondary" />
-        <Slider {...settings} className="mt-sm-5">
-          {slides}
-        </Slider>
-        {/* <p class="lead">
+        <div className="container-fluid">
+          <div className="row mt-5">{slides}</div>
+          {/* <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p> */}
+        </div>
       </div>
     )
   }
 }
 
-export default withNamespaces('translation')(SectionProduct)
+export default withNamespaces('translation')(SectionService)
