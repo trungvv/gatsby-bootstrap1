@@ -6,7 +6,7 @@ import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Banner from 'components/Banner'
-import ProductCarousel from 'components/ProductCarousel'
+import SectionProduct from 'components/SectionProduct'
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
       <Meta site={get(data, 'site.meta')} />
 
       <Banner />
-      <ProductCarousel />
+      <SectionProduct />
 
       {posts.map(({ post }, i) => (
         <Post

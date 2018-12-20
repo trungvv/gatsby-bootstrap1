@@ -31,7 +31,9 @@
     "gatsby-transformer-sharp": "2.1.8",
     "i18next": "^13.0.0",
     "react-i18next": "^8.4.0",
-    "reactstrap": "^6.5.0"
+    "react-slick": "^0.23.2",
+    "reactstrap": "^6.5.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.8",

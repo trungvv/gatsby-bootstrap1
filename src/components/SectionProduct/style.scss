@@ -1,0 +1,27 @@
+@import 'scss/colors.scss';
+// .slick-prev:before, .slick-next:before {
+//     color: $black;
+// }
+// .mbr-section-title {
+//     margin-top: 30px;
+//     margin-bottom: 0;
+//     text-align: center;
+//     color: $black;
+    
+//     }
+// .mbr-section-subtitle {
+//     line-height: 1.5;
+//     color: $gray-600;
+//     text-align: center;
+// }
+.overflow-hidden {
+    height: 7rem;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+.line {
+    left: 50%;
+    right: 50%;
+    width: 100px;
+    height: 1px;
+}

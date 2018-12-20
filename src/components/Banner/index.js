@@ -13,7 +13,7 @@ const items = [
   {
     id: 1,
     src:
-      'https://cdn.pixabay.com/photo/2018/09/12/12/14/photographer-3672010_1280.jpg',
+      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_conference_3-1.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1',
   },
