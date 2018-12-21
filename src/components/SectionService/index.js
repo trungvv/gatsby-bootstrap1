@@ -12,9 +12,9 @@ const items = [
     altText: 'Slide 1',
     caption: 'Slide 1',
     category: 'Phim',
-    title: 'Card title',
+    title: 'Media',
     desc:
-      'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+      'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content.',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const items = [
     altText: 'Slide 2',
     caption: 'Slide 2',
     category: 'Phim',
-    title: 'Card title',
+    title: 'Public Relations',
     desc:
       'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
@@ -34,9 +34,9 @@ const items = [
     altText: 'Slide 3',
     caption: 'Slide 3',
     category: 'Phim',
-    title: 'Card title',
+    title: 'Tổ chức sự kiện',
     desc:
-      'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+      'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
   {
     id: 4,
@@ -45,7 +45,29 @@ const items = [
     altText: 'Slide 3',
     caption: 'Slide 3',
     category: 'Phim',
-    title: 'Card title',
+    title: 'Digital Marketing',
+    desc:
+      'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+  },
+  {
+    id: 5,
+    src:
+      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_festival_3-min-370x222.jpg',
+    altText: 'Slide 3',
+    caption: 'Slide 3',
+    category: 'Phim',
+    title: 'OOH',
+    desc:
+      'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+  },
+  {
+    id: 6,
+    src:
+      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_conference_2-2-370x222.jpg',
+    altText: 'Slide 3',
+    caption: 'Slide 3',
+    category: 'Phim',
+    title: 'Khác',
     desc:
       'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
@@ -89,15 +111,15 @@ class SectionService extends Component {
     const { t } = this.props
     const slides = items.map(item => {
       return (
-        <div className="col-sm-6 col-md-4 ">
-          <div className="media border media-style" key={item.id}>
+        <div className="col-md-6 col-lg-4" key={item.id}>
+          <div className="media border media-style">
             <div className="mr-3 btn rounded-circle bg-secondary num">
               {item.id}
             </div>
             <div className="media-body">
               <h3 className="media-title">{item.title}</h3>
 
-              <div className="overflow-hidden text-justify">
+              <div className="overflow-hidden">
                 <p className="media-text ">{item.desc}</p>
               </div>
 
@@ -111,18 +133,18 @@ class SectionService extends Component {
     })
 
     return (
-      <div className="jumbotron container-fluid rounded-0">
+      <div className="jumbotron container-fluid rounded-0 mb-0">
         <h1 className="display-4 text-center">{t('service-title')}</h1>
 
         <p className="lead text-center">{t('service-subtitle')}</p>
 
         <hr className="line bg-secondary" />
-        <div className="container-fluid">
-          <div className="row mt-5">{slides}</div>
-          {/* <p class="lead">
+        {/* <div className="container-fluid"> */}
+        <div className="row mt-5">{slides}</div>
+        {/* <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p> */}
-        </div>
+        {/* </div> */}
       </div>
     )
   }

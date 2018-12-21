@@ -1,0 +1,18 @@
+@import 'scss/colors.scss';
+
+.line {
+    left: 50%;
+    right: 50%;
+    width: 100px;
+    height: 1px;
+}
+.media-style {
+    padding: 1.5rem;
+    margin-top: 2rem;
+
+    border-radius: 0.25rem
+}
+.media-title {
+    text-transform: capitalize;
+    font-weight: 500;
+    }

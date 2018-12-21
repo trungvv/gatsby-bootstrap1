@@ -8,6 +8,9 @@ import Layout from 'components/Layout'
 import Banner from 'components/Banner'
 import SectionProduct from 'components/SectionProduct'
 import SectionService from 'components/SectionService'
+import SectionCustomer from 'components/SectionCustomer'
+import SectionPricing from 'components/SectionPricing'
+import SectionContact from 'components/SectionContact'
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
@@ -18,6 +21,9 @@ const BlogIndex = ({ data, location }) => {
       <Banner />
       <SectionProduct />
       <SectionService />
+      <SectionCustomer />
+      <SectionPricing />
+      <SectionContact />
 
       {posts.map(({ post }, i) => (
         <Post

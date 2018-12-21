@@ -9,19 +9,17 @@ import './style.scss'
 const items = [
   {
     id: 1,
-    src:
-      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_concert_2-min-370x222.jpg',
+    src: 'customers/hp-logo.png',
     altText: 'Slide 1',
     caption: 'Slide 1',
-    category: 'Phim',
+    category: 'Customer',
     title: 'Card title',
     desc:
       'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
   {
     id: 2,
-    src:
-      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_sport_2-2-370x222.jpg',
+    src: 'customers/ichnhan-logo.png',
     altText: 'Slide 2',
     caption: 'Slide 2',
     category: 'Phim',
@@ -31,8 +29,7 @@ const items = [
   },
   {
     id: 3,
-    src:
-      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_festival_3-min-370x222.jpg',
+    src: 'customers/namduoc-logo.png',
     altText: 'Slide 3',
     caption: 'Slide 3',
     category: 'Phim',
@@ -42,8 +39,7 @@ const items = [
   },
   {
     id: 4,
-    src:
-      'https://ovatheme.com/em4u/wp-content/uploads/2017/10/event_conference_2-2-370x222.jpg',
+    src: 'customers/pnj-logo.png',
     altText: 'Slide 3',
     caption: 'Slide 3',
     category: 'Phim',
@@ -51,9 +47,29 @@ const items = [
     desc:
       'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
   },
+  {
+    id: 5,
+    src: 'customers/rmit-logo.png',
+    altText: 'Slide 1',
+    caption: 'Slide 1',
+    category: 'Customer',
+    title: 'Card title',
+    desc:
+      'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+  },
+  {
+    id: 6,
+    src: 'customers/sabeco.png',
+    altText: 'Slide 2',
+    caption: 'Slide 2',
+    category: 'Phim',
+    title: 'Card title',
+    desc:
+      'his is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+  },
 ]
 
-class SectionProduct extends Component {
+class SectionCustomer extends Component {
   render() {
     const settings = {
       dots: false,
@@ -91,30 +107,17 @@ class SectionProduct extends Component {
     const { t } = this.props
     const slides = items.map(item => {
       return (
-        <div className="card" key={item.id}>
-          <img className="card-img-top" src={item.src} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">{item.title}</h5>
-            <p className="card-subtitle">
-              <small className="text-muted">{item.category}</small>
-            </p>
-            <div className="overflow-hidden">
-              <p className="card-text text-justify">{item.desc}</p>
-            </div>
-
-            <Link to="#" className="btn btn-outline-secondary">
-              {t('btn-detail')}
-            </Link>
-          </div>
+        <div className="col" key={item.id}>
+          <img className="card-img-top" src={item.src} alt={item.desc} />
         </div>
       )
     })
 
     return (
       <div className="jumbotron bg-light mb-0">
-        <h1 className="display-4 text-center">{t('product-title')}</h1>
+        <h1 className="display-4 text-center">{t('customer-title')}</h1>
 
-        <p className="lead text-center">{t('product-subtitle')}</p>
+        {/* <p className="lead text-center">{t('customer-subtitle')}</p> */}
 
         <hr className="line bg-secondary" />
         {/* <div className="container-fluid"> */}
@@ -127,4 +130,4 @@ class SectionProduct extends Component {
   }
 }
 
-export default withNamespaces('translation')(SectionProduct)
+export default withNamespaces('translation')(SectionCustomer)

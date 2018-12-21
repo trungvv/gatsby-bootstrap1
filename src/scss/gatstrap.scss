@@ -69,11 +69,11 @@ body {
   width: 100%;
 }
 
-* {
+*, *:before, *:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-
 p {
   font-size: 16px;
   line-height: 1.5;
