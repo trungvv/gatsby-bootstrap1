@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import { withNamespaces } from 'react-i18next'
-import { Link } from 'gatsby'
+// import { withNamespaces } from 'react-i18next'
+// import { Link } from 'gatsby'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './style.scss'
@@ -115,7 +115,10 @@ class SectionCustomer extends Component {
 
     return (
       <div className="jumbotron bg-light mb-0">
-        <h1 className="display-4 text-center">{t('customer-title')}</h1>
+        <h1 className="display-4 text-center">
+          {/* {t('customer-title')} */}
+          Khách hàng
+        </h1>
 
         {/* <p className="lead text-center">{t('customer-subtitle')}</p> */}
 
@@ -130,4 +133,5 @@ class SectionCustomer extends Component {
   }
 }
 
-export default withNamespaces('translation')(SectionCustomer)
+// export default withNamespaces('translation')(SectionCustomer)
+export default SectionCustomer

@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap'
-import { withNamespaces } from 'react-i18next'
+// import { withNamespaces } from 'react-i18next'
 import './style.scss'
 
 const items = [
@@ -126,4 +126,5 @@ class Banner extends Component {
   }
 }
 
-export default withNamespaces('translation')(Banner)
+// export default withNamespaces('translation')(Banner)
+export default Banner

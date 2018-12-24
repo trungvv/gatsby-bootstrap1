@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Slider from 'react-slick'
-import { withNamespaces } from 'react-i18next'
-import { Link } from 'gatsby'
+// import { withNamespaces } from 'react-i18next'
+// import { Link } from 'gatsby'
 import './style.scss'
 
 const items = [
@@ -134,9 +133,16 @@ class SectionService extends Component {
 
     return (
       <div className="jumbotron container-fluid rounded-0 mb-0">
-        <h1 className="display-4 text-center">{t('service-title')}</h1>
+        <h1 className="display-4 text-center">
+          {/* {t('service-title')} */}
+          Dịch vụ
+        </h1>
 
-        <p className="lead text-center">{t('service-subtitle')}</p>
+        <p className="lead text-center">
+          {/* {t('service-subtitle')} */}
+          There is a lot of exciting stuff going on in the stars above us that
+          makes
+        </p>
 
         <hr className="line bg-secondary" />
         {/* <div className="container-fluid"> */}
@@ -150,4 +156,5 @@ class SectionService extends Component {
   }
 }
 
-export default withNamespaces('translation')(SectionService)
+// export default withNamespaces('translation')(SectionService)
+export default SectionService

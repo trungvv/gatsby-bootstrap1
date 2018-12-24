@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import { withNamespaces } from 'react-i18next'
+// import { withNamespaces } from 'react-i18next'
 import { Link } from 'gatsby'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -103,7 +103,8 @@ class SectionProduct extends Component {
             </div>
 
             <Link to="#" className="btn btn-outline-secondary">
-              {t('btn-detail')}
+              {/* {t('btn-detail')} */}
+              Chi tiết
             </Link>
           </div>
         </div>
@@ -112,9 +113,16 @@ class SectionProduct extends Component {
 
     return (
       <div className="jumbotron bg-light mb-0">
-        <h1 className="display-4 text-center">{t('product-title')}</h1>
+        <h1 className="display-4 text-center">
+          {/* {t('product-title')} */}
+          Sản phẩm tiêu biểu
+        </h1>
 
-        <p className="lead text-center">{t('product-subtitle')}</p>
+        <p className="lead text-center">
+          {/* {t('product-subtitle')} */}
+          There is a lot of exciting stuff going on in the stars above us that
+          makes
+        </p>
 
         <hr className="line bg-secondary" />
         {/* <div className="container-fluid"> */}
@@ -127,4 +135,5 @@ class SectionProduct extends Component {
   }
 }
 
-export default withNamespaces('translation')(SectionProduct)
+// export default withNamespaces('translation')(SectionProduct)
+export default SectionProduct

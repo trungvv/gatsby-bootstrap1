@@ -12,8 +12,8 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap'
-import LanguageSwitcher from 'components/LanguageSwitcher'
-import { withNamespaces } from 'react-i18next'
+// import LanguageSwitcher from 'components/LanguageSwitcher'
+// import { withNamespaces } from 'react-i18next'
 import './style.scss'
 
 class Navi extends React.Component {
@@ -30,11 +30,11 @@ class Navi extends React.Component {
     })
   }
   render() {
-    const { location, title, t } = this.props
+    const { location, title } = this.props
     return (
       <Navbar className="navbar-expand-md navbar-light fixed-top">
         <NavbarBrand>
-          <img src="/img/logo.svg" alt="{title}" width="100px" height="30px" />
+          <img src="/img/logo.svg" alt={title} width="100px" height="30px" />
         </NavbarBrand>
 
         {/* Toggler/collapsible Button */}
@@ -53,7 +53,8 @@ class Navi extends React.Component {
               }
             >
               <Link to="/" className="nav-link">
-                {t('menu-item-home')}
+                {/* {t('menu-item-home')} */}
+                Home
               </Link>
             </NavItem>
             {/* Sản phẩm */}
@@ -67,32 +68,38 @@ class Navi extends React.Component {
               }
             >
               <DropdownToggle nav caret>
-                {t('menu-item-product')}
+                {/* {t('menu-item-product')} */}
+                Sản phẩm
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-film')}
+                    {/* {t('menu-subitem-film')} */}
+                    Phim
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-news')}
+                    {/* {t('menu-subitem-news')} */}
+                    Chương trình tin tức
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-gameshows')}
+                    {/* {t('menu-subitem-gameshows')} */}
+                    Gameshows
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-public')}
+                    {/* {t('menu-subitem-public')} */}
+                    Chương trình xã hội
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-product-others')}
+                    {/* {t('menu-subitem-product-others')} */}
+                    Sản phẩm khác
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
@@ -109,32 +116,38 @@ class Navi extends React.Component {
               }
             >
               <DropdownToggle nav caret>
-                {t('menu-item-service')}
+                {/* {t('menu-item-service')} */}
+                Dịch vụ
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-media')}
+                    {/* {t('menu-subitem-media')} */}
+                    Media
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-pr')}
+                    {/* {t('menu-subitem-pr')} */}
+                    Public Relations
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-event')}
+                    {/* {t('menu-subitem-event')} */}
+                    Tổ chức Event
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-digitalMarketing')}
+                    {/* {t('menu-subitem-digitalMarketing')} */}
+                    Digital Marketing
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-ooh')}
+                    {/* {t('menu-subitem-ooh')} */}
+                    OOH
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
@@ -149,7 +162,8 @@ class Navi extends React.Component {
               }
             >
               <Link to="/" className="nav-link">
-                {t('menu-item-customer')}
+                {/* {t('menu-item-customer')} */}
+                Khách hàng
               </Link>
             </NavItem>
             {/* Bảng giá */}
@@ -163,41 +177,43 @@ class Navi extends React.Component {
               }
             >
               <DropdownToggle nav caret>
-                {t('menu-item-pricing')}
+                {/* {t('menu-item-pricing')} */}
+                Bảng giá
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-eNews')}
+                    {/* {t('menu-subitem-eNews')} */}
+                    Báo điện tử
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-newspaper')}
+                    {/* {t('menu-subitem-newspaper')} */}
+                    Báo giấy
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-television')}
+                    {/* {t('menu-subitem-television')} */}
+                    Truyền hình
                   </Link>
                 </DropdownItem>
                 <DropdownItem>
                   <Link to="/Profile/" className="nav-link">
-                    {t('menu-subitem-ooh')}
+                    {/* {t('menu-subitem-ooh')} */}
+                    OOH
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             {/* Ngôn ngữ */}
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </Nav>
-          {/* <select data-width="fit">
-                <option data-content='<span class="flag-icon flag-icon-us"></span> En'>En</option>
-                <option data-content='<span class="flag-icon flag-icon-vi"></span> Vi'>Vi</option>
-            </select> */}
         </Collapse>
       </Navbar>
     )
   }
 }
-export default withNamespaces('translation')(Navi)
+// export default withNamespaces('translation')(Navi)
+export default Navi
