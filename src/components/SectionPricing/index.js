@@ -12,7 +12,7 @@ class SectionPricing extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-6">
-              <h3 className="display-4">
+              <h3 className="display-4 ">
                 {/* {t('pricing-title')} */}
                 Báo giá
               </h3>

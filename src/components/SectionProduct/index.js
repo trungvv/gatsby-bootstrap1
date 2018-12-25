@@ -91,21 +91,23 @@ class SectionProduct extends Component {
     const { t } = this.props
     const slides = items.map(item => {
       return (
-        <div className="card" key={item.id}>
-          <img className="card-img-top" src={item.src} alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">{item.title}</h5>
-            <p className="card-subtitle">
-              <small className="text-muted">{item.category}</small>
-            </p>
-            <div className="overflow-hidden">
-              <p className="card-text text-justify">{item.desc}</p>
-            </div>
+        <div className="col">
+          <div className="card" key={item.id}>
+            <img className="card-img-top" src={item.src} alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="media-title">{item.title}</h5>
+              <p className="card-subtitle">
+                <small className="text-muted">{item.category}</small>
+              </p>
+              <div className="overflow-hidden">
+                <p className="card-text text-justify">{item.desc}</p>
+              </div>
 
-            <Link to="#" className="btn btn-outline-secondary">
-              {/* {t('btn-detail')} */}
-              Chi tiết
-            </Link>
+              <Link to="#" className="btn btn-outline-secondary">
+                {/* {t('btn-detail')} */}
+                Chi tiết
+              </Link>
+            </div>
           </div>
         </div>
       )
@@ -126,7 +128,7 @@ class SectionProduct extends Component {
 
         <hr className="line bg-secondary" />
         {/* <div className="container-fluid"> */}
-        <Slider {...settings} className="mt-sm-5">
+        <Slider {...settings} className="mt-sm-5 row">
           {slides}
         </Slider>
         {/* </div> */}

@@ -12,7 +12,7 @@ import './style.scss'
 const Footer = ({ author, title }) => (
   <div className="container-fluid bg-primary footer">
     <div className="container">
-      <div className="row pt-5 pb-3">
+      <div className="row pt-5 pb-5">
         {/* Col 1 */}
         <div className="col-sm-12 col-md-12 col-lg-3">
           <h5>Hai Nam Media</h5>
@@ -61,7 +61,7 @@ const Footer = ({ author, title }) => (
           <hr />
           <p>Subscribe to our newsletter and get all the cool news</p>
           <div className="subcribe-email">
-            <input type="text" id="subcribe" />
+            <input type="text" id="subcribe" className="rounded" />
             {/* <div className="subcribe-icon"> */}
             <FontAwesomeIcon icon={faPaperPlane} className="subcribe-icon" />
             {/* </div> */}
@@ -74,18 +74,17 @@ const Footer = ({ author, title }) => (
         <p className="float-md-left">Bản quyền Hải Nam Media 2018</p>
       </div>
       <div className="col">
-        <ul className="list-inline float-md-right">
-          <li className="list-inline-item">
+        <div className="d-flex flex-row-reverse">
+          <div className="">
             <FontAwesomeIcon icon={faFacebook} />
-          </li>
-          <li className="list-inline-item">
+          </div>
+          <div className="pr-2">
             <FontAwesomeIcon icon={faYoutube} />
-          </li>
-          <li className="list-inline-item">
-            {' '}
+          </div>
+          <div className="pr-2">
             <FontAwesomeIcon icon={faPinterest} />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

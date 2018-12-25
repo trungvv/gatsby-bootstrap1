@@ -32,13 +32,16 @@ class Navi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
-      <Navbar className="navbar-expand-md navbar-light fixed-top">
+      // <div className="fixed-top">
+      <Navbar className="navbar-expand-md navbar-light sticky-top">
         <NavbarBrand>
-          <img src="/img/logo.svg" alt={title} width="100px" height="30px" />
+          <Link to="/">
+            <img src="/img/logo.svg" alt={title} width="100px" height="30px" />
+          </Link>
         </NavbarBrand>
 
         {/* Toggler/collapsible Button */}
-        <NavbarToggler onClick={this.toggle} />
+        <NavbarToggler onClick={this.toggle} className="btn-sm" />
 
         {/* Navbar links */}
         <Collapse
@@ -212,6 +215,7 @@ class Navi extends React.Component {
           </Nav>
         </Collapse>
       </Navbar>
+      // </div>
     )
   }
 }

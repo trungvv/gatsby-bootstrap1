@@ -1,6 +1,13 @@
 @import 'scss/colors.scss';
-.slick-prev:before, .slick-next:before {
+.slick-prev, .slick-next{
     color: $black;
+    
+}
+.slick-prev {
+    left: -10px;
+}
+.slick-next {
+    right: -10px;
 }
 .overflow-hidden {
     height: 7rem;

@@ -80,12 +80,14 @@ class Banner extends Component {
 
     const slides = items.map(item => {
       return (
+        // <div className="carousel-inner" key={item.id}>
         <CarouselItem
           className="custom-tag"
           tag="div"
           key={item.id}
           onExiting={this.onExiting}
           onExited={this.onExited}
+          className="carousel-inner"
         >
           <img className="img-fluid" src={item.src} alt={item.altText} />
           <CarouselCaption

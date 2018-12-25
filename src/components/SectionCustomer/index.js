@@ -124,7 +124,7 @@ class SectionCustomer extends Component {
 
         <hr className="line bg-secondary" />
         {/* <div className="container-fluid"> */}
-        <Slider {...settings} className="mt-sm-5">
+        <Slider {...settings} className="mt-sm-5 row">
           {slides}
         </Slider>
         {/* </div> */}
