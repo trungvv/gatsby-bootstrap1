@@ -1,9 +1,39 @@
 @import 'scss/colors.scss';
 
 .footer {
+  color: $white;
   hr {
     border-color: $red;
-    border-width: 3px;
+    border-width: 2px;
     max-width: 50px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0.5rem;
   }
+  
+}
+#subcribe {
+  z-index: -1;
+  width: 100%;
+}
+.subcribe-email {
+  display: inline;
+}
+.subcribe-icon {
+  margin-left: -30px;
+  color: $red;
+}
+.footer-line {
+  border-top: 1px solid $gray-600;
+  padding-top: 1rem;
+  color: $gray-600;
+}
+.footer-list-style {
+  list-style-type:none;
+  padding-left:0;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  
 }
